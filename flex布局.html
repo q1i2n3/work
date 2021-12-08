@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ops {
+            width: 1920px;
+            height: 950px;
+            border: 2px solid blue;
+        }
+        
+        .main {
+            width: 1918px;
+            text-align: center;
+            border: 1px solid blue;
+        }
+        
+        .bd {
+            width: 1917px;
+            height: 875px;
+            border: 2px solid blue;
+            display: flex;
+            /* 起点为垂直上沿 */
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .flex1 {
+            width: 455px;
+            height: 850px;
+            padding: 10px;
+            display: flex;
+            /* 起点为垂直上沿 */
+            flex-direction: column;
+            /* 均匀排列 */
+            justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid blue; */
+            margin-left: 30px;
+        }
+        
+        .flex1-box1 {
+            background-color: chocolate;
+            width: 435px;
+            height: 200px;
+        }
+        
+        .flex1-box1-title1 {
+            background-color: rgb(30, 198, 210);
+            width: 415px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex1-box1-news1 {
+            background-color: rgb(30, 144, 210);
+            width: 415px;
+            height: 145px;
+            margin: 10px;
+        }
+        
+        .flex1-box2 {
+            background-color: rgba(210, 105, 30, 0.8);
+            width: 435px;
+            height: 200px;
+        }
+        
+        .flex1-box2-title1 {
+            background-color: rgba(30, 198, 210, 0.8);
+            width: 415px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex1-box2-news1 {
+            background-color: rgba(30, 144, 210, 0.8);
+            width: 415px;
+            height: 145px;
+            margin: 10px;
+        }
+        
+        .flex1-box3 {
+            background-color: rgba(210, 105, 30, 0.5);
+            ;
+            width: 435px;
+            height: 200px;
+        }
+        
+        .flex1-box3-title1 {
+            background-color: rgba(30, 198, 210, 0.5);
+            width: 415px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex1-box3-news1 {
+            background-color: rgba(30, 144, 210, 0.5);
+            width: 415px;
+            height: 145px;
+            margin: 10px;
+        }
+        
+        .flex1-box4 {
+            background-color: rgba(210, 105, 30, 0.2);
+            ;
+            width: 435px;
+            height: 200px;
+        }
+        
+        .flex1-box4-title1 {
+            background-color: rgba(30, 198, 210, 0.2);
+            width: 415px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex1-box4-news1 {
+            background-color: rgba(30, 144, 210, 0.2);
+            width: 415px;
+            height: 145px;
+            margin: 10px;
+        }
+        
+        .flex2 {
+            width: 700px;
+            height: 850px;
+            padding: 10px;
+            display: flex;
+            /* 起点为垂直上沿 */
+            flex-direction: column;
+            /* 均匀排列 */
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid blue;
+        }
+        
+        .flex2-title {
+            width: 700px;
+            height: 24px;
+            margin: 10px;
+            /* border: 2px solid blue; */
+            margin-top: 5px;
+        }
+        
+        .flex2-box1 {
+            background-color: chocolate;
+            width: 680px;
+            height: 200px;
+            margin-top: 2px;
+        }
+        
+        .flex2-box1-title1 {
+            background-color: rgb(30, 198, 210);
+            width: 660px;
+            height: 100px;
+            margin: 10px;
+        }
+        
+        .flex2-box1-news1 {
+            background-color: rgb(30, 144, 210);
+            width: 660px;
+            height: 70px;
+            margin: 10px;
+        }
+        
+        .flex2-box2 {
+            background-color: rgba(210, 105, 30, 0.8);
+            width: 680px;
+            height: 200px;
+        }
+        
+        .flex2-box2-title1 {
+            background-color: rgba(30, 198, 210, 0.8);
+            width: 660px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex2-box2-news1 {
+            background-color: rgba(30, 144, 210, 0.8);
+            width: 660px;
+            height: 145px;
+            margin: 10px;
+        }
+        
+        .flex2-box3 {
+            background-color: rgba(210, 105, 30, 0.5);
+            width: 680px;
+            height: 200px;
+        }
+        
+        .flex2-box3-title1 {
+            background-color: rgba(30, 198, 210, 0.5);
+            width: 660px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex2-box3-news1 {
+            background-color: rgba(30, 144, 210, 0.5);
+            width: 660px;
+            height: 145px;
+            margin: 10px;
+        }
+        
+        .flex2-box4 {
+            background-color: rgba(210, 105, 30, 0.2);
+            width: 680px;
+            height: 100px;
+        }
+        
+        .flex2-box4-title1 {
+            background-color: rgba(30, 198, 210, 0.2);
+            width: 660px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex2-box4-news1 {
+            background-color: rgba(30, 144, 210, 0.2);
+            width: 660px;
+            height: 45px;
+            margin: 10px;
+        }
+        
+        .flex3 {
+            width: 550px;
+            height: 850px;
+            padding: 10px;
+            display: flex;
+            /* 起点为垂直上沿 */
+            flex-direction: column;
+            /* 均匀排列 */
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid blue;
+            margin-right: 30px;
+        }
+        
+        .flex3-box1 {
+            background-color: rgba(210, 105, 30, 1);
+            width: 530px;
+            height: 520px;
+        }
+        
+        .flex3-box1-title1 {
+            background-color: rgba(30, 198, 210, 1);
+            width: 510px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex3-box1-news1 {
+            background-color: rgba(30, 144, 210, 1);
+            width: 510px;
+            height: 460px;
+            margin: 10px;
+        }
+        
+        .flex3-box2 {
+            background-color: rgba(210, 105, 30, 0.8);
+            width: 530px;
+            height: 300px;
+        }
+        
+        .flex3-box2-title1 {
+            background-color: rgba(30, 198, 210, 0.8);
+            width: 510px;
+            height: 24px;
+            margin: 10px;
+        }
+        
+        .flex3-box2-news1 {
+            background-color: rgba(30, 144, 210, 0.8);
+            width: 510px;
+            height: 240px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ops">
+        <div class="main">
+            <h2>象山县疫情防控</h2>
+        </div>
+        <div class="bd">
+            <div class="flex1">
+                <div class="flex1-box1">
+                    <div class="flex1-box1-title1">公安大队数据协查信息</div>
+                    <div class="flex1-box1-news1"></div>
+                </div>
+                <div class="flex1-box2">
+                    <div class="flex1-box2-title1">疾控现场流调信息</div>
+                    <div class="flex1-box2-news1"></div>
+                </div>
+                <div class="flex1-box3">
+                    <div class="flex1-box3-title1">镇乡街道协查信息</div>
+                    <div class="flex1-box3-news1"></div>
+                </div>
+                <div class="flex1-box4">
+                    <div class="flex1-box4-title1">其他部门协查信息</div>
+                    <div class="flex1-box4-news1"></div>
+                </div>
+            </div>
+            <div class="flex2">
+                <div>
+                    <h4 class="flex2-title">人员核心信息</h4>
+                </div>
+                <div class="flex2-box1">
+                    <div class="flex2-box1-title1"></div>
+                    <div class="flex2-box1-news1"></div>
+                </div>
+                <div class="flex2-box2">
+                    <div class="flex2-box2-title1">人物关系图</div>
+                    <div class="flex2-box2-news1"></div>
+                </div>
+                <div class="flex2-box3">
+                    <div class="flex2-box3-title1">流调报告</div>
+                    <div class="flex2-box3-news1"></div>
+                </div>
+                <div class="flex2-box4">
+                    <div class="flex2-box4-title1">备注</div>
+                    <div class="flex2-box4-news1"></div>
+                </div>
+            </div>
+            <div class="flex3">
+                <div class="flex3-box1">
+                    <div class="flex3-box1-title1">密接人员信息</div>
+                    <div class="flex3-box1-news1"></div>
+                </div>
+                <div class="flex3-box2">
+                    <div class="flex3-box2-title1">关联场所信息</div>
+                    <div class="flex3-box2-news1"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
