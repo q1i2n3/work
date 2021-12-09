@@ -12,6 +12,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        font-size: 100%;
     }
     
     html,
@@ -26,9 +27,22 @@
     .header {
         background-color: rgba(44, 73, 168, 0.479);
         height: 10%;
+        position: relative;
+    }
+    
+    h1 {
         text-align: center;
         color: white;
-        padding-top: 1%;
+        font-size: 2em;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        /* top: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+        left: 0; */
+        transform: translate(50%, -50%);
     }
     
     .row {
@@ -123,7 +137,7 @@
     }
     
     .right-a {
-        flex: 2;
+        flex: 3;
         background-color: rgba(168, 97, 47, 0.603);
         padding: 10px 10px;
         margin: 20px;
