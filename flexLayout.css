@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #3f51b5;
+    text-align: center;
+    font-size: 16px; 
+    /* 16px等于1rem */
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    flex: 1;
+    background: #7b81a1;
+    font-size: 2rem;
+}
+.title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content{
+    flex: 9;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5%;
+}
+.left {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-box {
+    background: grey;
+    height: 23%;
+}
+.center {
+    flex: 6;
+    margin: 0 1%;
+    padding: 0.5% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.center-box {
+    background: rgb(94, 91, 80);
+}
+.center :nth-child(1) {
+    height: 24%;
+}
+.center :nth-child(2) {
+    height: 22%;
+}
+.center :nth-child(3) {
+    height: 24%;
+}
+.center :nth-child(4) {
+    height: 12%;
+}
+.right {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-box {
+    background: grey;
+}
+.right :nth-child(1) {
+    height: 64%;
+}
+.right :nth-child(2) {
+    height: 32%;
+}
