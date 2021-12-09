@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+        }
+        
+        html,
+        body {
+            font-family: Arial;
+            /* width: 100%; */
+            height: 100%;
+        }
+        
+        .item1 {
+            grid-area: a;
+            margin: 0rem 5rem;
+            position: relative;
+        }
+        
+        .item2 {
+            grid-area: b;
+            margin: 1rem 2rem 1rem 5rem;
+        }
+        
+        .item3 {
+            grid-area: c;
+            margin: 1rem 1rem 1rem 1rem;
+            display: grid;
+            grid-template-rows: 0.3fr 2fr 2fr 2fr 1fr;
+            gap: 1em;
+        }
+        
+        .item3>div {
+            background-color: rgba(143, 133, 216, 0.322);
+            padding: 20px 2px;
+            font-size: 3rem;
+            margin: 0rem 4rem
+        }
+        
+        .item4 {
+            grid-area: d;
+            margin: 1rem 5rem 1rem 2rem;
+        }
+        
+        .item5 {
+            grid-area: e;
+            margin: 1rem 2rem 1rem 5rem;
+        }
+        
+        .item6 {
+            grid-area: f;
+            margin: 1rem 2rem 1rem 5rem;
+        }
+        
+        .item7 {
+            grid-area: g;
+            margin: 0rem 5rem 1rem 2rem;
+        }
+        
+        .item8 {
+            grid-area: h;
+            margin: 1rem 2rem 1rem 5rem;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'a a a' 'b c d' 'e c d' 'f c g' 'h c g';
+            gap: 1em;
+            background-color: #2196F3;
+            grid-template-columns: 2.5fr 4.5fr 3fr;
+            grid-template-rows: 1fr 2.25fr 2.25fr 2.25fr 2.25fr;
+            /* grid-template-columns: 25% 45% 30%;
+            grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%; */
+            height: 100%;
+            justify-content: space-evenly;
+        }
+        
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 2px;
+            font-size: 3rem;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1>象山县疫情防控指挥平台</h1>
+        </div>
+        <div class="item2">2</div>
+        <div class="item3">
+            <h4 style="color: white;">人员核心信息</h4>
+            <div item3-a>1</div>
+            <div item3-b>2</div>
+            <div item3-c>3</div>
+            <div item3-d>4</div>
+        </div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+
+    </div>
+</body>
+
+</html>
